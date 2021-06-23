@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const moviesRouter = require("./movies/movies.router");
+const theatersRouter = require("./theaters/theaters.router");
 
 //MIDDLEWARE
 app.use(cors());
@@ -10,6 +11,7 @@ app.use(express.json());
 
 //ROUTES
 app.use("/movies", moviesRouter);
+app.use("/theaters", theatersRouter);
 
 //NOT FOUND HANDLER
 app.use((req, res, next) => {
