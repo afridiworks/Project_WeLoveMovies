@@ -6,6 +6,7 @@ exports.up = function (knex) {
     table.string("rating");
     table.text("description");
     table.string("image_url");
+    table.timestamps(true, true);
   });
 };
 
@@ -22,6 +23,7 @@ exports.up = function (knex) {
     table.string("city");
     table.string("state");
     table.string("zip");
+    table.timestamps(true, true);
   });
 };
 

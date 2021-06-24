@@ -1,7 +1,8 @@
+const { groupBy, select } = require("../db/connection");
 const knex = require("../db/connection");
 
 function list(isShowing) {
-  return knex("movies as m")
+  return knex(`movies as m`)
     .select("m.*")
     .modify((queryBuilder) => {
       if (isShowing) {
@@ -14,10 +15,10 @@ function list(isShowing) {
 }
 
 function read(movieId) {
-  return knex("movies")
+  return knex(`movies`)
     .select("*")
     .where({ movie_id: movieId })
-    .then((moot) => moot[0]);
+    .then((record) => record[0]);
 }
 
 module.exports = { list, read };

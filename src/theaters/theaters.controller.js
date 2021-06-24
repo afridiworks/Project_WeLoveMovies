@@ -5,8 +5,8 @@ const reduceProperties = require("../utils/reduce-properties");
 const reduceTheaterAndMovie = reduceProperties("theater_id", {
   movie_id: ["movies", null, "movies_id"],
   title: ["movies", null, "title"],
-  rating: ["movies", null, "rating"],
   runtime_in_minutes: ["movies", null, "runtime_in_minutes"],
+  rating: ["movies", null, "rating"],
   description: ["movies", null, "description"],
 });
 
