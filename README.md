@@ -1,7 +1,7 @@
 # Project_WeLoveMovies
 
 
-This is an applicaton that allows the user to pull up list of movies, showings and reviews by several critics. The was created in a group effort with fellow cohort members. Languages used in creation were Javascript, Node, Express and Postgres.
+This is an applicaton that allows the user to pull up list of movies, showings and reviews by several critics. The was created in a group effort with fellow cohort members. Tools and languages used in creation were Javascript, Node, Express, ElephantSQL, and DBeaver.
 
 The project was created with a focus on the following:
   * Running tests from the command line
